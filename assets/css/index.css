@@ -1,0 +1,1076 @@
+/* banner */
+.banner {
+  background: transparent;
+}
+.banner #background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+}
+.banner .box {
+  text-align: center;
+  padding: 10em 0em 3em;
+}
+.banner .box .title {
+  font-family: OSLight;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #999999;
+}
+.banner .box .title span {
+  font-family: OSBold;
+  color: #fcac45;
+}
+.banner .box .info {
+  margin-bottom: 11em;
+  color: #999;
+  font-size: 1.4em;
+  font-family: OSLight;
+}
+.banner .box .info span {
+  font-family: OSBold;
+}
+.banner .box .more a {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  border: 1px solid #c3c3c3;
+  color: #c3c3c3;
+  border-radius: 100px;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-family: OSBold;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+.banner .box .more a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px 0px #c3c3c3;
+}
+@media screen and (max-width: 1050px) and (max-height: 1400px) {
+  .banner {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 780px) and (max-height: 1050px) {
+  .banner {
+    height: 90vh;
+  }
+  .banner .box .info {
+    margin-bottom: 8em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner {
+    height: 90vh;
+  }
+  .banner .box .title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  .banner .box .info {
+    font-size: 1.2em;
+    margin-bottom: 16em;
+  }
+}
+@media screen and (max-width: 380px) and (max-height: 850px) {
+  .banner .box {
+    padding-top: 13em;
+  }
+}
+@media screen and (max-width: 380px) and (max-height: 680px) {
+  .banner .box {
+    padding-top: 5em;
+  }
+  .banner .box .info {
+    margin-bottom: 10em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner .box {
+    padding-top: 5em;
+  }
+  .banner .box .info {
+    margin-bottom: 8em;
+  }
+}
+/* about*/
+.about {
+  padding: 5em 0em;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .left {
+  flex-shrink: 0;
+}
+.about .container .left img {
+  width: 100%;
+}
+.about .container .right .title {
+  margin-bottom: 2em;
+}
+.about .container .right .title .small {
+  font-family: OSLight;
+  color: #636363;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.about .container .right .title .big {
+  font-family: OSLight;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+.about .container .right .title .big span:first-child {
+  border-bottom: 4px solid #fcac45;
+  padding-bottom: 0.3em;
+}
+.about .container .right .title .big span:last-child {
+  font-family: OSBold;
+}
+.about .container .right .info {
+  font-family: OSLight;
+  color: #636363;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.about .container .right .list {
+  color: #636363;
+  font-family: OSLtalic;
+  margin-bottom: 2em;
+}
+.about .container .right .list li {
+  background: url('../images/about-list-icon.png') no-repeat left center;
+  text-indent: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.about .container .right .list li span {
+  font-family: OSBold;
+}
+.about .container .right .more {
+  display: flex;
+  justify-content: left;
+  padding: 1em;
+  border: 1px solid #636363;
+  border-radius: 3px;
+  width: 45%;
+  overflow-x: hidden;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.about .container .right .more:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px 0px #636363;
+}
+.about .container .right .more .icon {
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+.about .container .right .more .name {
+  text-transform: uppercase;
+  font-size: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  margin-top: 1px;
+}
+@media screen and (max-width: 1200px) {
+  .about .container .left {
+    flex-shrink: 0.4;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about .container {
+    display: block;
+  }
+  .about .container .left {
+    display: none;
+  }
+  .about .container .right .more {
+    width: 14em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about .container .right .title .small {
+    font-size: 1.2em;
+  }
+  .about .container .right .title .big {
+    font-size: 1.5em;
+  }
+}
+/* team */
+.team {
+  background: #070707;
+  color: #fff;
+  padding: 5em 0em 2em;
+}
+.team .subject {
+  text-align: center;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1.5em;
+  margin-bottom: 6em;
+}
+.team .subject .title {
+  font-family: OSLight;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.team .subject .title span {
+  font-family: OSBold;
+}
+.team .teamlist {
+  position: relative;
+  height: 35em;
+}
+.team .teamlist input {
+  display: none;
+}
+.team .teamlist input:checked + .list {
+  opacity: 1;
+  z-index: 1;
+}
+.team .teamlist #team1:checked ~ .morebox label[for="team1"],
+.team .teamlist #team2:checked ~ .morebox label[for="team2"],
+.team .teamlist #team3:checked ~ .morebox label[for="team3"] {
+  background-color: #fcac45;
+}
+.team .teamlist .list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+}
+.team .teamlist .list .item {
+  width: 20%;
+  text-align: center;
+}
+.team .teamlist .list .item .thumb {
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  transition: all linear 0.3s;
+}
+.team .teamlist .list .item .thumb img {
+  width: 100%;
+}
+.team .teamlist .list .item .thumb:hover {
+  transform: rotate(360deg);
+}
+.team .teamlist .list .item .content .name {
+  font-family: OSBold;
+  font-size: 1.3em;
+}
+.team .teamlist .list .item .content .job {
+  display: inline-block;
+  font-family: OSLight;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.team .teamlist .list .item .content .info {
+  font-family: OSLight;
+}
+.team .teamlist .morebox {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 2em;
+}
+.team .teamlist .morebox .more {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.team .teamlist .morebox .more label {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.team .teamlist .morebox .more label:hover {
+  background-color: #fcac45;
+}
+@media screen and (max-width: 700px) {
+  .team .subject {
+    margin-bottom: 3em;
+  }
+  .team .teamlist {
+    height: 45em;
+  }
+  .team .teamlist .list {
+    flex-wrap: wrap;
+  }
+  .team .teamlist .list .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  .team .teamlist .list .item .thumb {
+    width: 20%;
+    border-radius: 3px;
+    margin-bottom: 0;
+    margin-right: 1em;
+    flex-shrink: 0;
+  }
+  .team .teamlist .list .item .content {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .team .teamlist .list .item .content * {
+    width: 100%;
+  }
+  .team .teamlist .list .item .content .job {
+    margin-bottom: 0;
+  }
+  .team .teamlist .morebox {
+    margin-bottom: 0em;
+  }
+  .team .teamlist .morebox .more {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .team .subject .title {
+    font-size: 1.5em;
+  }
+  .team .teamlist {
+    height: 45em;
+  }
+  .team .teamlist .list .item .thumb {
+    width: 30%;
+  }
+  .team .teamlist .list .item .thumb img {
+    border-radius: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team .teamlist {
+    height: 40em;
+  }
+  .team .teamlist .morebox {
+    margin-bottom: -1em;
+  }
+  .team .teamlist .morebox .more {
+    width: 18%;
+  }
+}
+/* services */
+.services {
+  padding: 5em 0em;
+}
+.services .title {
+  text-align: center;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 3em;
+  font-family: OSLight;
+  text-transform: uppercase;
+}
+.services .title span {
+  font-family: OSBold;
+}
+.services .info {
+  width: 85%;
+  margin: 0 auto;
+  color: #636363;
+  font-family: OSLtalic;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.7em;
+  margin-bottom: 3em;
+}
+.services .list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+}
+.services .list .item {
+  width: 20%;
+  text-align: center;
+  border-radius: 100px;
+}
+.services .list .item .thumb {
+  width: 125px;
+  height: 125px;
+  border: 8px solid #fcac45;
+  border-radius: 100px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  transition: all linear 0.3s;
+}
+.services .list .item .thumb img {
+  border-radius: 100px;
+}
+.services .list .item .thumb:hover {
+  box-shadow: 0px 0px 10px 10px #ccc;
+  background-color: #fcac45;
+}
+.services .list .item .content .name {
+  font-size: 1.5em;
+  margin: 1em 0em;
+  font-family: OSBold;
+}
+@media screen and (max-width: 680px) {
+  .services .title {
+    font-size: 2em;
+  }
+  .services .list {
+    flex-wrap: wrap;
+  }
+  .services .list .item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .services .list .item .thumb {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fcac45;
+    margin: 0 auto;
+    flex-shrink: 0;
+    border-radius: 100%;
+  }
+  .services .list .item .thumb:hover {
+    background: #fcac45;
+  }
+  .services .list .item .content {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .services .list .item .content * {
+    width: 100%;
+  }
+  .services .list .item .content .name {
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+  .services .list .item .content .info {
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    text-align: center;
+  }
+}
+/* clients */
+.clients {
+  background: #0b0b0b;
+  padding: 5em 0em;
+}
+.clients .title {
+  text-align: center;
+  font-size: 3em;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+  font-family: OSLight;
+  text-transform: uppercase;
+  color: #fff;
+}
+.clients .title span {
+  font-family: OSBold;
+}
+.clients .list {
+  position: relative;
+  height: 15em;
+}
+.clients .list input {
+  display: none;
+}
+.clients .list input:checked + .content {
+  opacity: 1;
+  z-index: 1;
+}
+.clients .list #content1:checked ~ .morebox label[for="content1"],
+.clients .list #content2:checked ~ .morebox label[for="content2"],
+.clients .list #content3:checked ~ .morebox label[for="content3"] {
+  background-color: #fcac45;
+}
+.clients .list .content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+}
+.clients .list .morebox {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.clients .list .morebox .more {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.clients .list .morebox .more label {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.clients .list .morebox .more label:hover {
+  background-color: #fcac45;
+}
+@media screen and (max-width: 1000px) {
+  .clients .list .morebox .more {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .clients .title {
+    font-size: 1.5em;
+  }
+  .clients .list .morebox .more {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .clients .title {
+    font-size: 1.5em;
+  }
+}
+/* work */
+.work {
+  padding: 5em 0em 2em;
+}
+.work .subject {
+  text-align: center;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1.5em;
+  margin-bottom: 3em;
+}
+.work .subject .title {
+  font-family: OSLight;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.work .subject .title span {
+  font-family: OSBold;
+}
+.work .info {
+  width: 85%;
+  margin: 0 auto;
+  color: #636363;
+  font-family: OSLtalic;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.7em;
+  margin-bottom: 6em;
+}
+.work .typelist .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.work .typelist .top .left .title {
+  font-family: OSBold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.work .typelist .top .right a {
+  text-transform: capitalize;
+  color: #636363;
+  font-family: OSLight;
+  transition: all linear 0.2s;
+  font-size: 1.2em;
+  border-right: 1px solid #636363;
+  padding: 0em 1em;
+}
+.work .typelist .top .right a:hover {
+  color: #070707;
+  font-weight: bold;
+}
+.work .typelist .top .right a:last-child {
+  border-right: 0px;
+  padding-right: 0;
+}
+.work .typelist .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work .typelist .list .item {
+  margin-bottom: 2em;
+  position: relative;
+}
+.work .typelist .list .item img {
+  width: 100%;
+  z-index: 100;
+  transition: all linear 0.3s;
+}
+.work .typelist .list .item img:hover {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+.work .typelist .list .item .two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #222222;
+  text-align: center;
+  margin: 0 auto;
+  z-index: -1;
+}
+.work .typelist .list .item .two:hover {
+  opacity: 1;
+}
+.work .typelist .list .item .two img {
+  width: 100%;
+}
+.work .typelist .list .item .two .title {
+  padding: 3em 0em 1em;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.work .typelist .list .item .two .title p {
+  font-size: 0.7em;
+  color: #7c7c7c;
+  text-transform: capitalize ;
+}
+.work .typelist .list .item .two .more {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f2a643;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+.work .typelist .list .item .two .more:hover {
+  box-shadow: 0px 0px 10px 10px #333;
+}
+.work .typelist .list .item .two .more a {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f2a643;
+  line-height: 50px;
+}
+@media screen and (max-width: 780px) and (max-height: 1050px) {
+  .work .typelist .list .item {
+    width: 48%;
+  }
+  .work .typelist .list .item .two .title {
+    padding: 3em 0em 1em;
+    font-size: 2em;
+  }
+  .work .typelist .list .item .two .title p {
+    font-size: 0.8em;
+  }
+  .work .typelist .list .item .two .more {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f2a643;
+    border-radius: 100px;
+    margin: 0 auto;
+  }
+  .work .typelist .list .item .two .more a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f2a643;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .work .subject .title {
+    font-size: 2em;
+  }
+  .work .typelist .top .left {
+    display: none;
+  }
+  .work .typelist .top .right {
+    width: 100%;
+  }
+  .work .typelist .list .item {
+    width: 45%;
+  }
+  .work .typelist .list .item .two .title {
+    padding: 3em 0em 1em;
+    font-size: 1.1em;
+  }
+  .work .typelist .list .item .two .title p {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .work .subject .title {
+    font-size: 1.5em;
+  }
+  .work .info {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .work .typelist .top .right a {
+    font-size: 0.5em;
+  }
+  .work .typelist .list .item .two .title {
+    padding: 3em 0em 1em;
+    font-size: 1.1em;
+  }
+  .work .typelist .list .item .two .title p {
+    font-size: 0.5em;
+  }
+  .work .typelist .list .item .two .more {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f2a643;
+    border-radius: 100px;
+    margin: 0 auto;
+  }
+  .work .typelist .list .item .two .more a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f2a643;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 380px) and (max-height: 850px) {
+  .work .typelist .list .item {
+    width: 45%;
+  }
+  .work .typelist .list .item .two .title {
+    padding: 1em 0em 0.5em;
+    font-size: 1.1em;
+  }
+  .work .typelist .list .item .two .title p {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .work .subject .title {
+    font-size: 1.5em;
+  }
+  .work .info {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .work .typelist .top .right a {
+    font-size: 0.5em;
+  }
+  .work .typelist .list .item .two .title {
+    padding: 1em 0em 0.3em;
+    font-size: 0.9em;
+  }
+  .work .typelist .list .item .two .title p {
+    font-size: 0.5em;
+  }
+  .work .typelist .list .item .two .more {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #f2a643;
+    border-radius: 100px;
+    margin: 0 auto;
+  }
+  .work .typelist .list .item .two .more:hover {
+    box-shadow: 0px 0px 10px 10px #333;
+  }
+  .work .typelist .list .item .two .more a {
+    font-size: 1em;
+    font-weight: bold;
+    color: #f2a643;
+    line-height: 20px;
+  }
+}
+/* test */
+.test {
+  background: #070707;
+  color: #fff;
+  padding: 5em 0em 2em;
+}
+.test .subject {
+  text-align: center;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1.5em;
+  margin-bottom: 6em;
+}
+.test .subject .title {
+  font-family: OSLight;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.test .subject .title span {
+  font-family: OSBold;
+}
+.test .infolist {
+  position: relative;
+  height: 15em;
+  width: 80%;
+  margin: 0 auto;
+}
+.test .infolist input {
+  display: none;
+}
+.test .infolist input:checked + .info {
+  opacity: 1;
+  z-index: 1;
+}
+.test .infolist #info1:checked ~ .morebox label[for="info1"],
+.test .infolist #info2:checked ~ .morebox label[for="info2"],
+.test .infolist #info3:checked ~ .morebox label[for="info3"] {
+  background-color: #fcac45;
+}
+.test .infolist .info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+}
+.test .infolist .info .content {
+  color: #fff;
+  font-family: OSBold;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+.test .infolist .info .name {
+  font-family: OSLight;
+  color: #999999;
+  font-size: 1.1em;
+}
+.test .infolist .info .name span {
+  font-family: OSBold;
+}
+.test .infolist .morebox {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.test .infolist .morebox .more {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.test .infolist .morebox .more label {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.test .infolist .morebox .more label:hover {
+  background-color: #fcac45;
+}
+@media screen and (max-width: 1000px) {
+  .test .infolist .morebox .more {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .test .subject {
+    margin-bottom: 3em;
+  }
+  .test .subject .title {
+    font-size: 1.5em;
+  }
+  .test .infolist {
+    height: 17em;
+  }
+  .test .infolist .morebox .more {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  .test .infolist {
+    width: 100%;
+  }
+  .test .infolist .info .content {
+    height: 7em;
+    overflow-y: scroll;
+    /*修改滚动条样式*/
+  }
+  .test .infolist .info .content::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
+  }
+  .test .infolist .info .content::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    border: 8px solid rgba(0, 0, 0, 0);
+    box-shadow: 8px 0 0 #A5ADB7 inset;
+    box-shadow: 8px 0 0 rgba(175, 35, 35, 0.5) inset;
+  }
+  .test .infolist .info .content::-webkit-scrollbar-thumb:hover {
+    box-shadow: 8px 0 0 #b82727 inset;
+  }
+  .test .infolist .morebox .more {
+    width: 15vw;
+  }
+}
+/* contact */
+.contact {
+  padding: 5em 0em 2em;
+}
+.contact .subject {
+  text-align: center;
+  background: url('../images/title-background.png') no-repeat bottom center;
+  padding-bottom: 1.5em;
+  margin-bottom: 3em;
+}
+.contact .subject .title {
+  font-family: OSLight;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.contact .subject .title span {
+  font-family: OSBold;
+}
+.contact .info {
+  width: 85%;
+  margin: 0 auto;
+  color: #636363;
+  font-family: OSLtalic;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.7em;
+  margin-bottom: 6em;
+}
+.contact .register {
+  width: 85%;
+  margin: 0 auto;
+}
+.contact .register .one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.contact .register .one .left,
+.contact .register .one .right {
+  width: 48%;
+}
+.contact .register .one .left .title,
+.contact .register .one .right .title {
+  font-family: OSLight;
+  font-size: 1.2em;
+  color: #413f3f;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.contact .register .one .left .title sup,
+.contact .register .one .right .title sup {
+  color: red;
+}
+.contact .register .one .input {
+  height: 3em;
+}
+.contact .register .one .input input {
+  width: 100%;
+  height: 100%;
+  line-height: 3em;
+  font-size: 1.2em;
+}
+.contact .register .two {
+  margin-bottom: 1.5em;
+}
+.contact .register .two .title {
+  width: 100%;
+  display: block;
+  font-family: OSLight;
+  font-size: 1.2em;
+  color: #413f3f;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.contact .register .two .title sup {
+  color: red;
+}
+.contact .register .two .input {
+  width: 100%;
+  height: 15em;
+}
+.contact .register .two .input textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+}
+.contact .register .three {
+  text-align: right;
+}
+.contact .register .three .send {
+  font-family: OSBold;
+  width: 10vw;
+  height: 3em;
+  line-height: 3em;
+  border: 0px;
+  background: #fcac45;
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .contact .subject .title {
+    font-size: 1.5em;
+  }
+  .contact .info {
+    margin-bottom: 3em;
+  }
+  .contact .register .one {
+    flex-wrap: wrap;
+  }
+  .contact .register .one .left,
+  .contact .register .one .right {
+    width: 100%;
+  }
+  .contact .register .one .left {
+    margin-bottom: 1em;
+  }
+  .contact .register .three .send {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact .register .two .input {
+    height: 8em;
+  }
+  .contact .register .three {
+    text-align: center;
+  }
+  .contact .register .three .send {
+    width: 35vw;
+  }
+}
